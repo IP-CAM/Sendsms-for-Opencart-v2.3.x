@@ -176,7 +176,7 @@ class ControllerExtensionModuleSendsms extends Controller {
         $this->load->model('extension/sendsms/history');
         $this->model_extension_sendsms_history->deleteSchema();
         $this->load->model('extension/event');
-        $this->model_extension_event->deleteEventByCode('sendsms');
+        $this->model_extension_event->deleteEvent('sendsms');
 
         # permissions
         $this->load->model('user/user_group');
